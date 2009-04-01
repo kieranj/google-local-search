@@ -1,6 +1,6 @@
 = google-local-search
 
-Description goes here.
+Geocodes a UK postcode more accurately using the GoogleLocalSearch web service rather than the Google Maps API.
 
 == Copyright
 
