@@ -1,0 +1,7 @@
+= google-local-search
+
+Description goes here.
+
+== Copyright
+
+Copyright (c) 2009 Kieran Johnson. See LICENSE for details.
