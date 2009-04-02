@@ -14,12 +14,16 @@ describe "GoogleLocalSearch" do
       lambda { GoogleLocalSearch::GeoCode.locate.should raise_error(ArgumentError) }
     end
     
-    it "should return lat/lng array" do
-      GoogleLocalSearch::GeoCode.locate("NW1").should be_instance_of(Array)
+    it "should return a Location object" do
+      GoogleLocalSearch::GeoCode.locate("NW1").should be_instance_of(GoogleLocalSearch::GeoCode::Location)
     end
     
-    it "should have 2 items in the array" do
-      GoogleLocalSearch::GeoCode.locate("NW1").length.should == 2
+    it "should have a latitude" do
+      GoogleLocalSearch::GeoCode.locate("NW1").lat.should_not be_nil
+    end
+    
+    it "should have a longitude" do
+      GoogleLocalSearch::GeoCode.locate("NW1").lng.should_not be_nil
     end
     
   end
