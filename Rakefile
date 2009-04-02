@@ -9,6 +9,8 @@ begin
     gem.email = "kieran@invisiblelines.com"
     gem.homepage = "http://github.com/kieranj/google-local-search"
     gem.authors = ["Kieran Johnson"]
+    gem.add_dependency(%q<json>, [">= 0"])
+    
 
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
